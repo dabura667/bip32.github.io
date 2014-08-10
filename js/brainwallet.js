@@ -60,6 +60,38 @@
             private_prefix: 0x6f+0x80,
             bip32_public: LITECOIN_TESTNET_PUBLIC,
             bip32_private: LITECOIN_TESTNET_PRIVATE
+        },
+        mona_main: {
+            name: "Monacoin",
+            network: "Mainnet",
+            prefix: 0x32,
+            private_prefix: 0x32+0x80,
+            bip32_public: MONACOIN_MAINNET_PUBLIC,
+            bip32_private: MONACOIN_MAINNET_PRIVATE
+        },
+        mona_test: {
+            name: "Monacoin",
+            network: "Testnet",
+            prefix: 0x6f,
+            private_prefix: 0x6f+0x80,
+            bip32_public: MONACOIN_TESTNET_PUBLIC,
+            bip32_private: MONACOIN_TESTNET_PRIVATE
+        },
+        kuma_main: {
+            name: "Kumacoin",
+            network: "Mainnet",
+            prefix: 0x2d,
+            private_prefix: 0x2d+0x80,
+            bip32_public: KUMACOIN_MAINNET_PUBLIC,
+            bip32_private: KUMACOIN_MAINNET_PRIVATE
+        },
+        kuma_test: {
+            name: "Kumacoin",
+            network: "Testnet",
+            prefix: 0x75,
+            private_prefix: 0x75+0x80,
+            bip32_public: KUMACOIN_TESTNET_PUBLIC,
+            bip32_private: KUMACOIN_TESTNET_PRIVATE
         }
     };
 
