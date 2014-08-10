@@ -10,7 +10,7 @@
     var TIMEOUT = 600;
     var timeout = null;
 
-    var coin = "btc_main";
+    var coin = "mona_main";
 
     var COINS = {
         btc_main: {
@@ -95,10 +95,10 @@
         }
     };
 
-    var PUBLIC_KEY_VERSION = 0;
-    var PRIVATE_KEY_VERSION = 0x80;
-    var ADDRESS_URL_PREFIX = 'http://blockchain.info/address/'
-    var BIP32_TYPE = BITCOIN_MAINNET_PRIVATE;
+    var PUBLIC_KEY_VERSION = 0x32;
+    var PRIVATE_KEY_VERSION = 0x32+0x80;
+    var ADDRESS_URL_PREFIX = ''
+    var BIP32_TYPE = MONACOIN_MAINNET_PRIVATE;
 
     function pad(str, len, ch) {
         padding = '';
@@ -556,7 +556,7 @@
         updateGenFrom();
 
         $("#bip32_source_passphrase").val("crazy horse battery staple");
-        $("#bip32_source_key").val("xprv9s21ZrQH143K2JF8RafpqtKiTbsbaxEeUaMnNHsm5o6wCW3z8ySyH4UxFVSfZ8n7ESu7fgir8imbZKLYVBxFPND1pniTZ81vKfd45EHKX73");
+        $("#bip32_source_key").val("Mnpv3aDAjprQ2Rma7zmsaP9xC84qwMpMPFZQNm8s5sNGGnhjF89AiaEx5nQ1PtKhYGEY5neSFGbzXxUHkpruggMd5xu4scRytwyEgjcFxiuDVfF");
         onInput("#bip32_source_passphrase", onUpdateSourcePassphrase);
 
         $("#checkbox_show_passphrase").on('change', onShowPassphraseChanged );
